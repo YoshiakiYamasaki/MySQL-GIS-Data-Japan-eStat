@@ -23,7 +23,7 @@ mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME hyogo;<br>
 
 # ダンプファイルのインポート方法
 mysql> use 任意のデータベース名<br>
-mysql> source h27ka28(hyogo).dmp
+mysql> source h27ka28(HyogoKen).dmp
 
 # 免責事項
 本データを用いて行う一切の行為について、いかなる責任も負いません。本データを使用したことによって被った損害、損失に対して一切の責任を負いません。

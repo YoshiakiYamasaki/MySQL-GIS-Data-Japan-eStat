@@ -1,6 +1,6 @@
 # このリポジトリの目的
 MySQLで使えるGISデータの配布用リポジトリ<br>
-(e-Statで配布されている境界データのシェープファイルをogr2ogrを使ってMySQLに取り込んで、Spatialインデックスを追加したもの)
+※e-Statで配布されている境界データのシェープファイルをogr2ogrを使ってMySQLに取り込んで、Spatialインデックスを追加したもの
 
 # 配布データの出典
 政府統計の総合窓口(e-Stat)（https://www.e-stat.go.jp/）<br>

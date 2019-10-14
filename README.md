@@ -4,8 +4,11 @@ MySQLで使えるGISデータの配布用リポジトリ<br>
 
 # 配布データの出典
 政府統計の総合窓口(e-Stat)（https://www.e-stat.go.jp/）<br>
+※このリポジトリでは、後述の手順でe-Statからダウンロードしたシェープファイルを加工したものを配布
 
-# データの加工方法
+# 配布データの作成方法
+※以下のコマンド例は、兵庫県のシェープファイル(h27ka28.shp)に対するコマンド例
+
 1.ogr2ogrを使って文字コードをUTF-8に変更<br>
 　ogr2ogr -f “ESRI Shapefile” -lco ENCODING=UTF-8 -oo ENCODING=CP932 h27ka28_utf8.shp h27ka28.shp
 

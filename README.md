@@ -1,6 +1,8 @@
 # このリポジトリの目的
 MySQLで使えるGISデータの配布用リポジトリ<br>
-※e-Statで配布されている境界データのシェープファイルをogr2ogrを使ってMySQLに取り込んで、Spatialインデックスを追加したもの
+※e-Statで配布されている境界データのシェープファイルをogr2ogrを使ってMySQLに取り込んで、Spatialインデックスを追加したもの<br>
+<br>
+MySQLのGIS機能を手軽に試せるようにするためにこのリポジトリを作りました。
 
 # 配布データの出典
 政府統計の総合窓口(e-Stat)（https://www.e-stat.go.jp/）<br>
@@ -28,7 +30,7 @@ mysql> use geotest<br>
 mysql> source h27ka28(HyogoKen).dmp
 
 # 備考
-シェープファイルをMySQLにインポートする手順については、[こちら](https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0deqiang-hua-saretagisji-neng-toshi-yong-shi-li-falsegoshao-jie-a?slide=40)の資料を参照
+自分でシェープファイルをMySQLにインポートしたい場合は、[こちら](https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0deqiang-hua-saretagisji-neng-toshi-yong-shi-li-falsegoshao-jie-a?slide=40)の資料で手順を解説しています
 
 # 免責事項
 本データを用いて行う一切の行為について、いかなる責任も負いません。本データを使用したことによって被った損害、損失に対して一切の責任を負いません。

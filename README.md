@@ -27,5 +27,8 @@ mysql> create database geotest;<br>
 mysql> use geotest<br>
 mysql> source h27ka28(HyogoKen).dmp
 
+# 備考
+シェープファイルをMySQLにインポートする手順については、[こちら](https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0deqiang-hua-saretagisji-neng-toshi-yong-shi-li-falsegoshao-jie-a?slide=40)の資料を参照
+
 # 免責事項
 本データを用いて行う一切の行為について、いかなる責任も負いません。本データを使用したことによって被った損害、損失に対して一切の責任を負いません。

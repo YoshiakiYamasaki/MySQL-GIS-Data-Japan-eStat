@@ -22,7 +22,7 @@ mysql> ALTER TABLE geotest.h27ka28_utf8 ADD SPATIAL INDEX (SHAPE);<br>
 mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME hyogo;<br>
 
 # ダンプファイルのインポート方法
-※geotestデータベースを作成して、その中にインポートする例
+※geotestデータベースを作成して、その中にインポートする例<br>
 mysql> create database geotest;<br>
 mysql> use geotest<br>
 mysql> source h27ka28(HyogoKen).dmp

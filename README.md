@@ -21,7 +21,7 @@ ogr2ogr -f "MySQL" MySQL:"geotest,host=127.0.0.1,user=root,password=root,port=33
 mysql> ALTER TABLE geotest.h27ka28_utf8 DROP INDEX SHAPE;<br>
 mysql> ALTER TABLE geotest.h27ka28_utf8 MODIFY SHAPE GEOMETRY NOT NULL SRID 4612;<br>
 mysql> ALTER TABLE geotest.h27ka28_utf8 ADD SPATIAL INDEX (SHAPE);<br>
-mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME hyogo;<br>
+mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME geotest.hyogo;<br>
 
 # ダンプファイルのインポート方法
 ※geotestデータベースを作成して、その中にインポートする例<br>

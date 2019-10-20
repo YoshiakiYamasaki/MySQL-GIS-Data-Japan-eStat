@@ -27,7 +27,7 @@ mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME geotest.hyogo;<br>
 ※geotestデータベースを作成して、その中にインポートする例<br><br>
 mysql> create database geotest;<br>
 mysql> use geotest<br>
-mysql> source h27ka28(HyogoKen).dmp
+mysql> source h27ka28(Hyogo).dmp
 
 # 備考
 自分でシェープファイルをMySQLにインポートしたい場合は、[こちら](https://speakerdeck.com/yoshiakiyamasaki/mysql-8-dot-0deqiang-hua-saretagisji-neng-toshi-yong-shi-li-falsegoshao-jie-a?slide=40)の資料で手順を解説しています

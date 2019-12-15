@@ -9,7 +9,7 @@ MySQLのGIS機能を手軽に試せるようにするためにこのリポジト
 ※このリポジトリでは、後述の手順でe-Statからダウンロードしたシェープファイルを加工したものを配布
 
 # 配布データの作成方法
-※以下のコマンド例は、兵庫県のシェープファイル(h27ka28.shp)に対するコマンド例
+以下のコマンド例は、兵庫県のシェープファイル(h27ka28.shp)に対するコマンド例
 
 1.ogr2ogrを使って文字コードをUTF-8に変更<br>
 ogr2ogr -f “ESRI Shapefile” -lco ENCODING=UTF-8 -oo ENCODING=CP932 h27ka28_utf8.shp h27ka28.shp
@@ -24,12 +24,12 @@ mysql> ALTER TABLE geotest.h27ka28_utf8 ADD SPATIAL INDEX (SHAPE);<br>
 mysql> ALTER TABLE geotest.h27ka28_utf8 RENAME geotest.hyogo;<br>
 
 # ダンプファイルのインポート方法
-geotestデータベースを作成して、その中にインポートする例<br>
+■geotestデータベースを作成して、その中にインポートする例<br>
 mysql> create database geotest;<br>
 mysql> use geotest<br>
 mysql> source h27ka28(Hyogo).dmp<br>
 <br>
-全ダンプファイルをインポートする場合のコピー＆ペースト用コマンド例<br>
+■全ダンプファイルをインポートする場合のコマンド例(コピー＆ペースト用)<br>
 source h27ka01(Hokkaido).dmp<br>
 source h27ka02(Aomori).dmp<br>
 source h27ka03(iwate).dmp<br>
